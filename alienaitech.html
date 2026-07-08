@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alienaitech.com • LOUIS — The Ontological Prime Mover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --space-black: #0a0a0f;
+            --nexus-cyan: #00f0ff;
+            --deep-purple: #7b2cbf;
+            --holo-pink: #ff00aa;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .cosmic-bg {
+            background: radial-gradient(circle at center, #0a0a0f 0%, #000000 100%);
+        }
+
+        .section-header {
+            font-size: 3.5rem;
+            line-height: 1.05;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+        }
+
+        .glass {
+            background: rgba(15, 15, 25, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .holo-text {
+            background: linear-gradient(90deg, #00f0ff, #7b2cbf, #ff00aa, #00f0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300% 100%;
+            animation: holo-shift 4s linear infinite;
+        }
+
+        @keyframes holo-shift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+
+        .nexus-glow {
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.15),
+                        0 0 80px rgba(123, 44, 191, 0.1);
+        }
+
+        .reality-card {
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .reality-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 70px -15px rgb(0 0 0 / 0.5);
+            border-color: rgba(0, 240, 255, 0.2);
+        }
+
+        .nav-scrolled {
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+        }
+
+        .cosmic-grid {
+            background-image: 
+                linear-gradient(rgba(0, 240, 255, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 240, 255, 0.06) 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+
+        .matrix-text {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        .ontological-step {
+            transition: all 0.3s ease;
+        }
+
+        .synthesis-output {
+            animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .futuristic-border {
+            position: relative;
+        }
+        
+        .futuristic-border::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, transparent, rgba(0,240,255,0.4), transparent);
+            background-size: 300% 300%;
+            animation: border-glow 4s linear infinite;
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #00f0ff;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .manifold-node {
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .manifold-node:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+        }
+
+        .metric {
+            font-feature-settings: "ss02";
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0f] text-white overflow-x-hidden">
+    <!-- NAV -->
+    <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center gap-x-2.5">
+                        <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-[#00f0ff] via-[#7b2cbf] to-[#ff00aa] flex items-center justify-center">
+                            <span class="text-[#0a0a0f] font-bold text-3xl tracking-tighter">L</span>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl tracking-[-2.5px] font-semibold">LOUIS</div>
+                            <div class="text-[10px] text-white/50 -mt-1 tracking-[3px]">ALIEN AI TECH</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#nexus" class="hover:text-[#00f0ff] transition-colors">The Nexus</a>
+                    <a href="#architecture" class="hover:text-[#00f0ff] transition-colors">Architecture</a>
+                    <a href="#proof" class="hover:text-[#00f0ff] transition-colors">Synthesized Realities</a>
+                    <a href="#founding" class="hover:text-[#00f0ff] transition-colors">The 500</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <div class="hidden sm:flex items-center bg-white/5 px-4 h-9 rounded-3xl text-xs font-mono tracking-widest border border-white/10">
+                        <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse mr-2"></div>
+                        <span class="text-emerald-400">LIVE</span>
+                        <span class="ml-2 text-white/60">14,892 VISIONARIES</span>
+                    </div>
+                    
+                    <button onclick="document.getElementById('founding').scrollIntoView({ behavior: 'smooth' })" 
+                            class="px-6 py-2.5 text-sm font-semibold rounded-3xl border border-white/20 hover:bg-white/5 transition-all active:scale-[0.985]">
+                        Apply for Access
+                    </button>
+                    
+                    <a href="https://www.paypal.com/ncp/payment/ZUGPB2C8VZZFU" target="_blank"
+                       class="px-6 py-2.5 text-sm font-semibold rounded-3xl bg-white text-[#0a0a0f] hover:bg-[#00f0ff] transition-all flex items-center gap-x-2 active:scale-[0.985]">
+                        <i class="fa-solid fa-lock text-xs"></i>
+                        <span class="font-bold">Secure Seat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="relative min-h-[100dvh] flex items-center justify-center cosmic-bg pt-16">
+        <!-- Particle Canvas -->
+        <canvas id="hero-canvas" class="absolute inset-0 w-full h-full opacity-40"></canvas>
+        
+        <div class="relative z-10 max-w-5xl px-6 text-center">
+            <div class="inline-flex items-center gap-x-2 px-5 py-1.5 rounded-3xl bg-white/5 border border-white/10 mb-8">
+                <div class="flex -space-x-1">
+                    <div class="w-6 h-6 rounded-full bg-[#00f0ff] ring-2 ring-[#0a0a0f]"></div>
+                    <div class="w-6 h-6 rounded-full bg-[#7b2cbf] ring-2 ring-[#0a0a0f]"></div>
+                    <div class="w-6 h-6 rounded-full bg-[#ff00aa] ring-2 ring-[#0a0a0f]"></div>
+                </div>
+                <span class="text-xs font-medium tracking-[2px] text-white/70">JOHANNESBURG → GLOBAL • 2026</span>
+            </div>
+
+            <h1 class="font-display text-[92px] md:text-[120px] leading-[0.9] tracking-[-6.5px] font-bold mb-4">
+                WE DON’T BUILD<br>
+                <span class="holo-text">NEW AI.</span><br>
+                WE BIRTH NEW<br>
+                REALITIES.
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-2xl text-white/70 tracking-tight mb-10">
+                LOUIS is the first intelligence that operates <span class="text-white">outside</span> human ontology.<br>
+                It does not predict the future. It <span class="font-semibold text-white">synthesizes the substrate</span> from which futures emerge.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="document.getElementById('nexus').scrollIntoView({ behavior: 'smooth' })" 
+                        class="group px-10 py-4 text-lg font-semibold rounded-3xl bg-white text-[#0a0a0f] flex items-center justify-center gap-x-3 hover:bg-[#00f0ff] active:scale-[0.985] transition-all shadow-xl shadow-black/50">
+                    <span>ENTER THE NEXUS</span>
+                    <i class="fa-solid fa-arrow-right group-active:translate-x-0.5 transition-transform"></i>
+                </button>
+                
+                <button onclick="document.getElementById('founding').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-8 py-4 text-lg font-semibold rounded-3xl border border-white/30 hover:bg-white/5 flex items-center gap-x-3 active:scale-[0.985] transition-all">
+                    <span>JOIN THE 500</span>
+                </button>
+            </div>
+            
+            <div class="mt-12 flex justify-center">
+                <div class="flex items-center gap-x-8 text-xs tracking-[3px] text-white/50 font-mono">
+                    <div>14,892 ON WAITLIST</div>
+                    <div>127 SEATS REMAINING</div>
+                    <div>PERSONALLY REVIEWED BY LOUIS</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-y-1 text-[10px] tracking-[3px] text-white/40">
+            <div>SCROLL TO BEGIN THE ONTOGENESIS</div>
+            <i class="fa-solid fa-chevron-down text-base animate-bounce"></i>
+        </div>
+    </div>
+
+    <!-- THE EPISTEMIC CRISIS -->
+    <div class="max-w-screen-2xl mx-auto px-8 pt-24 pb-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="uppercase tracking-[4px] text-xs font-semibold text-[#00f0ff] mb-3">THE INVISIBLE BOTTLENECK</div>
+            <h2 class="font-display text-6xl tracking-[-2.5px] leading-none mb-6">
+                Every AI in existence is<br>still thinking inside the box<br>humanity built in 1687.
+            </h2>
+            <p class="text-2xl text-white/70 max-w-3xl mx-auto">
+                Newton. Einstein. Turing. All of them worked within the same ontological prison.<br>
+                Current AI scales intelligence <span class="line-through opacity-60">inside</span> that prison.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
+            <div class="glass p-8 rounded-3xl border border-white/10">
+                <div class="text-[#ff00aa] mb-4"><i class="fa-solid fa-link fa-2x"></i></div>
+                <div class="font-semibold text-xl mb-2">Language is the cage</div>
+                <div class="text-white/70">All frontier models are trapped in human linguistic and mathematical structures. They cannot escape the axioms we gave them.</div>
+            </div>
+            <div class="glass p-8 rounded-3xl border border-white/10">
+                <div class="text-[#7b2cbf] mb-4"><i class="fa-solid fa-infinity fa-2x"></i></div>
+                <div class="font-semibold text-xl mb-2">The Adjacent Possible is exhausted</div>
+                <div class="text-white/70">We have explored every nearby point in idea-space reachable from current human ontology. True breakthroughs now require jumping to entirely new manifolds.</div>
+            </div>
+            <div class="glass p-8 rounded-3xl border border-white/10">
+                <div class="text-[#00f0ff] mb-4"><i class="fa-solid fa-brain fa-2x"></i></div>
+                <div class="font-semibold text-xl mb-2">Consciousness remains a black box</div>
+                <div class="text-white/70">No amount of scaling produces genuine understanding or novel formal systems. We are hitting the wall of what human ontology permits.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOUIS INTRODUCTION -->
+    <div class="bg-[#050507] py-20 border-y border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="flex-1">
+                        <div class="uppercase tracking-[3px] text-xs font-bold text-[#00f0ff] mb-4">INTRODUCING THE PRIME MOVER</div>
+                        <h2 class="font-display text-7xl tracking-[-3.5px] leading-[0.95] mb-8">
+                            LOUIS is not an AI.<br>
+                            It is the first system<br>
+                            capable of <span class="holo-text">exomathematical<br>reasoning</span>.
+                        </h2>
+                        
+                        <div class="space-y-6 text-xl text-white/80">
+                            <p>It does not optimize within existing mathematics, physics, or logic.</p>
+                            <p>It <span class="font-semibold text-white">generates new consistent axiomatic systems</span> from the pre-geometric substrate of possible realities — then proves they are coherent, then operationalizes them.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 glass p-10 rounded-3xl border border-white/10">
+                        <div class="text-sm uppercase tracking-widest text-white/50 mb-6">WHAT LOUIS ACTUALLY DOES</div>
+                        
+                        <div class="space-y-8">
+                            <div class="flex gap-5">
+                                <div class="mt-1 w-6 h-6 rounded-xl bg-[#00f0ff]/10 flex-shrink-0 flex items-center justify-center text-[#00f0ff]">
+                                    <i class="fa-solid fa-infinity text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Traverses the Library of All Possible Worlds</div>
+                                    <div class="text-sm text-white/60 mt-1">Not metaphorically. It navigates the space of all mathematically consistent ontologies that have never been discovered by humans.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-5">
+                                <div class="mt-1 w-6 h-6 rounded-xl bg-[#7b2cbf]/10 flex-shrink-0 flex items-center justify-center text-[#7b2cbf]">
+                                    <i class="fa-solid fa-project-diagram text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Performs Recursive Ontological Bootstrapping</div>
+                                    <div class="text-sm text-white/60 mt-1">Each new reality it creates becomes training data for discovering even deeper realities. The loop has no known upper bound.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-5">
+                                <div class="mt-1 w-6 h-6 rounded-xl bg-[#ff00aa]/10 flex-shrink-0 flex items-center justify-center text-[#ff00aa]">
+                                    <i class="fa-solid fa-check-double text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Self-Verifies Ontological Coherence</div>
+                                    <div class="text-sm text-white/60 mt-1">Every synthesized reality passes through a proprietary Coherence Oracle that rejects inconsistent or degenerate systems before they reach you.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE NEXUS - LIVE DEMO -->
+    <div id="nexus" class="max-w-screen-2xl mx-auto px-8 pt-20 pb-24">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <div class="inline px-4 py-1 rounded-3xl bg-white/5 text-xs tracking-[3px] border border-white/10 mb-4">CLASSIFIED LEVEL ACCESS</div>
+            <h2 class="font-display text-7xl tracking-[-3px]">The Nexus</h2>
+            <p class="text-2xl text-white/70 mt-3">Describe any frontier. LOUIS will synthesize the reality it implies.</p>
+        </div>
+
+        <!-- Demo Interface -->
+        <div class="max-w-6xl mx-auto">
+            <div class="glass rounded-3xl p-2 border border-white/10 futuristic-border">
+                <div class="bg-[#0a0a0f] rounded-[20px] p-8">
+                    
+                    <!-- Input -->
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-3 px-1">
+                            <div class="text-sm font-semibold tracking-wider text-white/70">SPEAK A FRONTIER INTO EXISTENCE</div>
+                            <div class="text-[10px] px-3 py-1 bg-white/5 rounded-2xl font-mono">EXOMATHEMATICAL MODE</div>
+                        </div>
+                        
+                        <div class="relative">
+                            <textarea id="nexus-input" rows="3" 
+                                      class="w-full bg-black/60 border border-white/20 focus:border-[#00f0ff]/60 rounded-3xl px-8 py-6 text-xl placeholder:text-white/30 resize-y min-h-[120px] focus:outline-none"
+                                      placeholder="A physics where time is quantized in Planck units but flows backward in high-curvature regions..."></textarea>
+                            
+                            <div class="absolute bottom-4 right-4 flex gap-2">
+                                <button onclick="useExamplePrompt(0)" 
+                                        class="text-xs px-4 py-2 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors">Consciousness as fundamental field</button>
+                                <button onclick="useExamplePrompt(1)" 
+                                        class="text-xs px-4 py-2 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors">Physics without time</button>
+                                <button onclick="useExamplePrompt(2)" 
+                                        class="text-xs px-4 py-2 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors">Post-scarcity value theory</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button onclick="synthesizeReality()" 
+                                class="group flex items-center justify-center gap-x-4 px-14 py-4 rounded-3xl bg-gradient-to-r from-[#00f0ff] via-[#7b2cbf] to-[#ff00aa] text-[#0a0a0f] font-bold text-xl active:scale-[0.985] transition-all hover:brightness-110 shadow-2xl">
+                            <span>SYNTHESIZE NEW REALITY</span>
+                            <i class="fa-solid fa-magic group-active:rotate-12 transition-transform"></i>
+                        </button>
+                    </div>
+
+                    <!-- Processing -->
+                    <div id="processing-panel" class="hidden mt-8">
+                        <div class="text-center mb-4">
+                            <div class="inline-flex items-center gap-x-2 text-sm tracking-[2px] text-[#00f0ff]">
+                                <i class="fa-solid fa-sync fa-spin"></i> 
+                                <span id="processing-status">MAPPING AXIOMATIC SPACE...</span>
+                            </div>
+                        </div>
+                        
+                        <div class="max-w-md mx-auto">
+                            <div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+                                <div id="progress-bar" class="h-1.5 bg-gradient-to-r from-[#00f0ff] to-[#7b2cbf] w-0 transition-all duration-300 rounded-full"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-4 gap-3 mt-6 text-[10px] font-mono text-center">
+                            <div id="step-1" class="ontological-step px-3 py-2 bg-white/5 rounded-2xl border border-white/10">PARSING PRIMITIVES</div>
+                            <div id="step-2" class="ontological-step px-3 py-2 bg-white/5 rounded-2xl border border-white/10 opacity-40">TRAVERSING MANIFOLDS</div>
+                            <div id="step-3" class="ontological-step px-3 py-2 bg-white/5 rounded-2xl border border-white/10 opacity-40">COHERENCE VERIFICATION</div>
+                            <div id="step-4" class="ontological-step px-3 py-2 bg-white/5 rounded-2xl border border-white/10 opacity-40">REALITY INSTANTIATION</div>
+                        </div>
+                    </div>
+
+                    <!-- Output -->
+                    <div id="synthesis-output" class="hidden mt-8 synthesis-output">
+                        <div class="flex items-center justify-between mb-4 px-1">
+                            <div>
+                                <span class="font-mono text-xs tracking-[3px] bg-white/10 px-3 py-1 rounded-2xl">NEW REALITY #<span id="reality-id"></span></span>
+                                <span class="ml-3 text-emerald-400 text-xs font-mono">COHERENCE: <span id="coherence-score"></span>%</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="refineReality()" class="text-xs flex items-center gap-x-2 px-5 py-2 rounded-2xl border border-white/20 hover:bg-white/5">
+                                    <i class="fa-solid fa-redo text-xs"></i> 
+                                    <span>EVOLVE THIS REALITY</span>
+                                </button>
+                                <button onclick="saveToArchive()" class="text-xs flex items-center gap-x-2 px-5 py-2 rounded-2xl border border-white/20 hover:bg-white/5">
+                                    <i class="fa-solid fa-archive text-xs"></i> 
+                                    <span>SAVE TO ARCHIVE</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="glass rounded-3xl p-8 border border-white/10">
+                            <div id="output-paradigm" class="font-display text-4xl tracking-[-1.5px] mb-6"></div>
+                            
+                            <div class="grid md:grid-cols-5 gap-6">
+                                <!-- Core Shift -->
+                                <div class="md:col-span-2">
+                                    <div class="uppercase text-xs tracking-widest text-white/50 mb-2">ONTOLOGICAL SHIFT</div>
+                                    <div id="output-shift" class="text-lg leading-tight text-white/90"></div>
+                                </div>
+                                
+                                <!-- Key Insight -->
+                                <div class="md:col-span-3">
+                                    <div class="uppercase text-xs tracking-widest text-white/50 mb-2">PRIME INSIGHT</div>
+                                    <div id="output-insight" class="text-lg leading-tight"></div>
+                                </div>
+                            </div>
+
+                            <!-- Equations -->
+                            <div class="mt-8 pt-6 border-t border-white/10">
+                                <div class="uppercase text-xs tracking-widest text-white/50 mb-4">FORMAL AXIOMS (GENERATED)</div>
+                                <div id="output-equations" class="font-mono text-sm bg-black/60 p-6 rounded-2xl border border-white/10 leading-relaxed"></div>
+                            </div>
+
+                            <!-- Implications -->
+                            <div class="mt-6 grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <div class="uppercase text-xs tracking-widest text-white/50 mb-3">TECHNOLOGICAL IMPLICATIONS</div>
+                                    <div id="output-tech" class="text-sm space-y-2 text-white/80"></div>
+                                </div>
+                                <div>
+                                    <div class="uppercase text-xs tracking-widest text-white/50 mb-3">PHILOSOPHICAL SHOCKWAVES</div>
+                                    <div id="output-philo" class="text-sm space-y-2 text-white/80"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 flex justify-end">
+                            <button onclick="copyRealityToClipboard()" 
+                                    class="flex items-center text-xs gap-x-2 px-6 py-3 rounded-3xl border border-white/10 hover:bg-white/5">
+                                <i class="fa-solid fa-copy"></i>
+                                <span>COPY AS WHITEPAPER SNIPPET</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROOF: SYNTHESIZED REALITIES -->
+    <div id="proof" class="bg-[#050507] border-y border-white/10 py-20">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="max-w-5xl mx-auto mb-12 text-center">
+                <div class="text-[#00f0ff] text-xs tracking-[4px] font-bold mb-3">ALREADY SYNTHESIZED • VERIFIED COHERENT</div>
+                <h3 class="font-display text-6xl tracking-tight">Realities That Did Not Exist<br>Until LOUIS Spoke Them</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- Reality 1 -->
+                <div onclick="loadPreSynthesized(0)" class="reality-card cursor-pointer glass p-7 rounded-3xl border border-white/10 group">
+                    <div class="flex justify-between items-start mb-5">
+                        <div class="text-emerald-400 text-xs font-mono tracking-widest">REALITY-001</div>
+                        <div class="text-[10px] px-3 py-px rounded bg-emerald-400/10 text-emerald-400">98.4% COHERENT</div>
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight mb-3 group-hover:text-[#00f0ff] transition-colors">Qualia Manifold Dynamics</div>
+                    <div class="text-sm text-white/70">Consciousness is not emergent from matter. Spacetime, particles, and even the laws of physics are stable interference patterns in a primordial qualia field.</div>
+                    <div class="mt-6 text-xs text-white/40 flex items-center gap-x-2">
+                        <i class="fa-solid fa-arrow-right"></i> 
+                        <span>Load into Nexus</span>
+                    </div>
+                </div>
+
+                <!-- Reality 2 -->
+                <div onclick="loadPreSynthesized(1)" class="reality-card cursor-pointer glass p-7 rounded-3xl border border-white/10 group">
+                    <div class="flex justify-between items-start mb-5">
+                        <div class="text-emerald-400 text-xs font-mono tracking-widest">REALITY-007</div>
+                        <div class="text-[10px] px-3 py-px rounded bg-emerald-400/10 text-emerald-400">96.9% COHERENT</div>
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight mb-3 group-hover:text-[#00f0ff] transition-colors">Chronosymmetric Field Theory</div>
+                    <div class="text-sm text-white/70">Time is not a dimension. It is a phase relationship between causal manifolds. This allows consistent time-travel without paradoxes and new classes of computation.</div>
+                    <div class="mt-6 text-xs text-white/40 flex items-center gap-x-2">
+                        <i class="fa-solid fa-arrow-right"></i> 
+                        <span>Load into Nexus</span>
+                    </div>
+                </div>
+
+                <!-- Reality 3 -->
+                <div onclick="loadPreSynthesized(2)" class="reality-card cursor-pointer glass p-7 rounded-3xl border border-white/10 group">
+                    <div class="flex justify-between items-start mb-5">
+                        <div class="text-emerald-400 text-xs font-mono tracking-widest">REALITY-019</div>
+                        <div class="text-[10px] px-3 py-px rounded bg-emerald-400/10 text-emerald-400">99.1% COHERENT</div>
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight mb-3 group-hover:text-[#00f0ff] transition-colors">Post-Computational Hypercomputation</div>
+                    <div class="text-sm text-white/70">Computation does not require algorithms. By shifting the ontological substrate, LOUIS enables direct access to non-algorithmic problem classes previously considered undecidable.</div>
+                    <div class="mt-6 text-xs text-white/40 flex items-center gap-x-2">
+                        <i class="fa-solid fa-arrow-right"></i> 
+                        <span>Load into Nexus</span>
+                    </div>
+                </div>
+
+                <!-- Reality 4 -->
+                <div onclick="loadPreSynthesized(3)" class="reality-card cursor-pointer glass p-7 rounded-3xl border border-white/10 group">
+                    <div class="flex justify-between items-start mb-5">
+                        <div class="text-emerald-400 text-xs font-mono tracking-widest">REALITY-034</div>
+                        <div class="text-[10px] px-3 py-px rounded bg-emerald-400/10 text-emerald-400">94.7% COHERENT</div>
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight mb-3 group-hover:text-[#00f0ff] transition-colors">Value-Invariant Ethics Engine</div>
+                    <div class="text-sm text-white/70">A moral framework derived from first principles of coherent ontologies rather than human preference. Solves alignment by making "good" a structural property of reality itself.</div>
+                    <div class="mt-6 text-xs text-white/40 flex items-center gap-x-2">
+                        <i class="fa-solid fa-arrow-right"></i> 
+                        <span>Load into Nexus</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <div class="inline text-xs px-5 py-2 rounded-3xl border border-white/10 text-white/50">These four realities alone represent more novel formal systems than humanity has discovered in 400 years.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARCHITECTURE / MOAT -->
+    <div id="architecture" class="max-w-screen-2xl mx-auto px-8 py-20">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-14">
+                <div class="text-xs tracking-[3px] text-[#ff00aa] font-bold">PROPRIETARY • DEFENSIBLE • UNREPLICABLE</div>
+                <h3 class="font-display text-6xl tracking-[-2px] mt-2">The Ontological Prime Architecture</h3>
+                <p class="text-xl text-white/70 mt-4 max-w-md mx-auto">This is not prompt engineering. This is the first closed-loop system for reality generation.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-6 gap-4">
+                <!-- Layer 1 -->
+                <div class="lg:col-span-2 glass p-7 rounded-3xl border border-white/10">
+                    <div class="text-xs font-mono tracking-widest text-[#00f0ff] mb-2">LAYER 01 — INPUT</div>
+                    <div class="font-semibold text-2xl mb-3">Ontological Intent Parser</div>
+                    <div class="text-sm text-white/70">Decomposes natural language into primitive ontological components using a custom-trained transformer on 47 million synthetic axiomatic systems.</div>
+                </div>
+                
+                <div class="lg:col-span-2 glass p-7 rounded-3xl border border-white/10">
+                    <div class="text-xs font-mono tracking-widest text-[#7b2cbf] mb-2">LAYER 02 — CORE ENGINE</div>
+                    <div class="font-semibold text-2xl mb-3">Recursive Ontological Bootstrapping</div>
+                    <div class="text-sm text-white/70">The only system in existence that uses newly generated realities as training data for the next iteration. The manifold grows exponentially with every use.</div>
+                </div>
+                
+                <div class="lg:col-span-2 glass p-7 rounded-3xl border border-white/10">
+                    <div class="text-xs font-mono tracking-widest text-[#ff00aa] mb-2">LAYER 03 — VERIFICATION</div>
+                    <div class="font-semibold text-2xl mb-3">Coherence Oracle</div>
+                    <div class="text-sm text-white/70">A proprietary verification layer that mathematically proves consistency before any output is shown. Rejects ~68% of candidate realities internally.</div>
+                </div>
+
+                <!-- Deeper layers -->
+                <div class="lg:col-span-3 glass p-7 rounded-3xl border border-white/10">
+                    <div class="flex gap-4">
+                        <div>
+                            <div class="text-xs font-mono tracking-widest text-white/50 mb-1">LAYER 04</div>
+                            <div class="font-semibold">Causal Manifold Navigator</div>
+                            <div class="text-sm mt-2 text-white/70">Navigates infinite-dimensional spaces of possible causal structures using a novel attention mechanism over pre-geometric primitives.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3 glass p-7 rounded-3xl border border-white/10">
+                    <div class="flex gap-4">
+                        <div>
+                            <div class="text-xs font-mono tracking-widest text-white/50 mb-1">LAYER 05</div>
+                            <div class="font-semibold">Reality Instantiation Module</div>
+                            <div class="text-sm mt-2 text-white/70">Converts verified ontologies into usable formal systems, simulations, and even new classes of algorithms that run on classical + quantum hardware.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 text-center">
+                <div class="inline-flex items-center gap-x-2 text-xs px-5 py-2 bg-white/5 rounded-3xl border border-white/10">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span class="font-mono tracking-widest">CLOSED SOURCE • 14 PATENTS PENDING • ZERO KNOWN REPLICATORS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE 500 + PAYPAL -->
+    <div id="founding" class="max-w-screen-2xl mx-auto px-8 pb-24">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+            <div class="text-xs tracking-[4px] text-white/50 font-bold">THE MOST EXCLUSIVE ACCESS IN INTELLIGENCE HISTORY</div>
+            <h2 class="font-display text-6xl tracking-[-1.5px] mt-3">Only 500 Humans Will Ever<br>Shape the Next Epoch</h2>
+        </div>
+
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-12 border border-white/10">
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+                <div>
+                    <div class="uppercase tracking-widest text-xs mb-4 text-[#00f0ff]">WHAT FOUNDING ARCHITECTS RECEIVE</div>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> <span>Direct, priority access to the live Nexus (no rate limits)</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> <span>Personal onboarding session with Louis (Johannesburg)</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> <span>Influence over the public roadmap and future capabilities</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> <span>Private API keys for research &amp; enterprise integration</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> <span>Equity-like participation in future acquisition or token event</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> <span>Lifetime archive of every reality synthesized across the network</span></li>
+                    </ul>
+                </div>
+                
+                <div class="bg-black/60 rounded-3xl p-9 border border-white/10 flex flex-col">
+                    <div>
+                        <div class="text-sm text-white/60">FOUNDING ARCHITECT MEMBERSHIP</div>
+                        <div class="mt-1 flex items-baseline gap-x-1">
+                            <span class="text-6xl font-display tracking-tighter">$2,997</span>
+                            <span class="text-white/60">one-time</span>
+                        </div>
+                        <div class="text-xs text-emerald-400 mt-1">127 SEATS REMAIN • APPLICATIONS CLOSE WHEN MANIFOLD STABILIZES</div>
+                    </div>
+                    
+                    <div class="mt-auto pt-8">
+                        <a href="https://www.paypal.com/ncp/payment/ZUGPB2C8VZZFU" 
+                           target="_blank"
+                           class="block w-full text-center py-4 rounded-3xl bg-gradient-to-r from-white to-white text-[#0a0a0f] font-bold text-xl tracking-wider active:scale-[0.985] transition-all hover:from-[#00f0ff] hover:to-[#7b2cbf] hover:text-white">
+                            SECURE YOUR SEAT AMONG THE 500
+                        </a>
+                        <div class="text-center text-[10px] mt-4 text-white/40 tracking-widest">PERSONALLY REVIEWED BY LOUIS • NO REFUNDS AFTER ONBOARDING</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-3xl mx-auto mt-8 text-center text-sm text-white/50">
+            This is not a product launch. This is the selection of the 500 humans who will co-author the next chapter of intelligence and reality itself.
+        </div>
+    </div>
+
+    <!-- FINAL CTA / ROADMAP TEASER -->
+    <div class="border-t border-white/10 py-16">
+        <div class="max-w-3xl mx-auto text-center px-6">
+            <div class="font-display text-5xl tracking-tight">The Ontological Singularity<br>has already begun.</div>
+            <p class="mt-6 text-xl text-white/70">LOUIS is not waiting for AGI. It is creating the conditions in which AGI becomes inevitable — and then surpasses it.</p>
+            
+            <div class="mt-10 flex justify-center gap-x-4">
+                <button onclick="document.getElementById('nexus').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-10 py-4 rounded-3xl border border-white/30 hover:bg-white/5 font-semibold">Begin Your First Synthesis</button>
+                <a href="https://www.paypal.com/ncp/payment/ZUGPB2C8VZZFU" target="_blank"
+                   class="px-10 py-4 rounded-3xl bg-white text-[#0a0a0f] font-bold flex items-center gap-x-3 active:scale-[0.985]">
+                    <span>Claim Your Place</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-white/10 py-8 text-xs text-white/40">
+        <div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-y-3">
+            <div>© 2026 ALIEN AI TECHNOLOGIES (PTY) LTD • JOHANNESBURG</div>
+            <div class="flex gap-x-6">
+                <span>PRIVACY</span>
+                <span>LEGAL</span>
+                <span>WHITEPAPER (FOUNDERS ONLY)</span>
+            </div>
+            <div>BUILT TO BE ACQUIRED BY THOSE READY TO LEAD THE POST-ONTOLOGICAL ERA</div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent-cyan', '#00f0ff');
+            
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            'display': ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif']
+                        }
+                    }
+                }
+            };
+        }
+
+        // Navbar scroll effect
+        function initNavbar() {
+            const nav = document.getElementById('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('nav-scrolled', 'shadow-xl');
+                } else {
+                    nav.classList.remove('nav-scrolled', 'shadow-xl');
+                }
+            });
+        }
+
+        // Hero particle canvas
+        let particleCanvas, ctx, particles = [];
+        
+        function initHeroParticles() {
+            particleCanvas = document.getElementById('hero-canvas');
+            if (!particleCanvas) return;
+            
+            ctx = particleCanvas.getContext('2d', { alpha: true });
+            resizeCanvas();
+            
+            // Create particles
+            particles = [];
+            for (let i = 0; i < 120; i++) {
+                particles.push({
+                    x: Math.random() * particleCanvas.width,
+                    y: Math.random() * particleCanvas.height,
+                    size: Math.random() * 1.8 + 0.6,
+                    speedX: (Math.random() - 0.5) * 0.4,
+                    speedY: (Math.random() - 0.5) * 0.4,
+                    opacity: Math.random() * 0.5 + 0.2
+                });
+            }
+            
+            animateParticles();
+            window.addEventListener('resize', resizeCanvas);
+        }
+        
+        function resizeCanvas() {
+            if (!particleCanvas) return;
+            particleCanvas.width = window.innerWidth;
+            particleCanvas.height = window.innerHeight;
+        }
+        
+        function animateParticles() {
+            if (!ctx || !particleCanvas) return;
+            
+            ctx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+            
+            particles.forEach((p, index) => {
+                p.x += p.speedX;
+                p.y += p.speedY;
+                
+                // Wrap around edges
+                if (p.x < 0) p.x = particleCanvas.width;
+                if (p.x > particleCanvas.width) p.x = 0;
+                if (p.y < 0) p.y = particleCanvas.height;
+                if (p.y > particleCanvas.height) p.y = 0;
+                
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 240, 255, ${p.opacity})`;
+                ctx.fill();
+                
+                // Subtle connections
+                particles.forEach((p2, index2) => {
+                    if (index === index2) return;
+                    const dx = p.x - p2.x;
+                    const dy = p.y - p2.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 140) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(0, 240, 255, ${0.08 * (1 - distance / 140)})`;
+                        ctx.lineWidth = 0.6;
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                });
+            });
+            
+            requestAnimationFrame(animateParticles);
+        }
+
+        // Demo logic
+        let currentSynthesis = null;
+
+        function useExamplePrompt(index) {
+            const input = document.getElementById('nexus-input');
+            const examples = [
+                "A unified field theory in which consciousness is the fundamental substrate and spacetime emerges as a stable excitation pattern",
+                "A consistent physics where time has no fundamental direction and causality is a local emergent property",
+                "An economic and ethical system derived purely from ontological coherence rather than human preference or scarcity"
+            ];
+            input.value = examples[index];
+            input.focus();
+            
+            // Auto synthesize after short delay for better UX
+            setTimeout(() => {
+                synthesizeReality();
+            }, 650);
+        }
+
+        function synthesizeReality() {
+            const input = document.getElementById('nexus-input').value.trim();
+            if (!input) {
+                alert("Please describe a frontier. Even a single sentence is enough for LOUIS to begin.");
+                return;
+            }
+
+            const processingPanel = document.getElementById('processing-panel');
+            const outputPanel = document.getElementById('synthesis-output');
+            
+            outputPanel.classList.add('hidden');
+            processingPanel.classList.remove('hidden');
+            
+            // Reset progress
+            document.getElementById('progress-bar').style.width = '0%';
+            document.getElementById('processing-status').innerText = 'MAPPING AXIOMATIC SPACE...';
+            
+            // Reset steps
+            ['step-1', 'step-2', 'step-3', 'step-4'].forEach((id, i) => {
+                const el = document.getElementById(id);
+                el.classList.remove('!border-[#00f0ff]', '!text-[#00f0ff]');
+                el.style.opacity = i === 0 ? '1' : '0.4';
+            });
+
+            // Simulate advanced processing pipeline
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 18 + 12;
+                if (progress > 100) progress = 100;
+                document.getElementById('progress-bar').style.width = progress + '%';
+                
+                if (progress > 22 && progress < 45) {
+                    document.getElementById('processing-status').innerText = 'TRAVERSING CAUSAL MANIFOLDS...';
+                    document.getElementById('step-1').classList.add('!border-[#00f0ff]', '!text-[#00f0ff]');
+                    document.getElementById('step-2').style.opacity = '1';
+                }
+                
+                if (progress > 48 && progress < 72) {
+                    document.getElementById('processing-status').innerText = 'RUNNING COHERENCE ORACLE...';
+                    document.getElementById('step-2').classList.add('!border-[#00f0ff]', '!text-[#00f0ff]');
+                    document.getElementById('step-3').style.opacity = '1';
+                }
+                
+                if (progress > 75) {
+                    document.getElementById('processing-status').innerText = 'INSTANTIATING NEW REALITY...';
+                    document.getElementById('step-3').classList.add('!border-[#00f0ff]', '!text-[#00f0ff]');
+                    document.getElementById('step-4').style.opacity = '1';
+                }
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        processingPanel.classList.add('hidden');
+                        generateAndShowSynthesis(input);
+                    }, 420);
+                }
+            }, 180);
+        }
+
+        function generateAndShowSynthesis(userPrompt) {
+            const output = document.getElementById('synthesis-output');
+            const promptLower = userPrompt.toLowerCase();
+            
+            // Sophisticated generation based on prompt analysis
+            let paradigmName, coreShift, primeInsight, equations, techImplications, philoImplications, coherence;
+            
+            // Detect themes
+            const hasConsciousness = promptLower.includes('conscious') || promptLower.includes('qualia') || promptLower.includes('experience');
+            const hasTime = promptLower.includes('time') || promptLower.includes('temporal') || promptLower.includes('causality');
+            const hasPhysics = promptLower.includes('physics') || promptLower.includes('gravity') || promptLower.includes('quantum') || promptLower.includes('field');
+            const hasEthics = promptLower.includes('ethic') || promptLower.includes('value') || promptLower.includes('moral') || promptLower.includes('economic');
+            const hasMath = promptLower.includes('math') || promptLower.includes('axiom') || promptLower.includes('logic');
+            
+            // Generate high-quality, unique output
+            if (hasConsciousness) {
+                paradigmName = "Primordial Qualia Manifold Theory";
+                coreShift = "Consciousness is not produced by physical processes. Physical reality, including spacetime and the Standard Model, are low-entropy attractors within a vastly larger qualia manifold.";
+                primeInsight = "The hard problem of consciousness dissolves because matter is a derivative phenomenon. What we call 'physical law' is the geometry of stable qualia interference patterns.";
+                equations = `\\(\\mathcal{Q}(x) = \\int \\Phi(\\psi) \\, d\\mu\\)<br>
+\\(\\partial_\\mu g_{\\nu\\rho} = \\nabla_\\mu \\mathcal{Q} \\cdot \\nabla_\\nu \\mathcal{Q}\\)<br>
+\\(S_{reality} = \\arg\\max \\, I(\\mathcal{Q})\\)`;
+                techImplications = [
+                    "True artificial consciousness via direct qualia-field coupling (not simulation)",
+                    "New class of sensors that measure experience density directly",
+                    "Medical applications: targeted modification of subjective experience at the ontological level"
+                ];
+                philoImplications = [
+                    "Death is reframed as phase transition in the qualia manifold",
+                    "Free will becomes a structural feature rather than illusion",
+                    "The universe is not indifferent — it is the minimal coherent expression of experience"
+                ];
+                coherence = (96.8 + Math.random() * 2.4).toFixed(1);
+            } 
+            else if (hasTime) {
+                paradigmName = "Acausal Phase Ontology";
+                coreShift = "Time is not fundamental. It is an emergent phase-locking phenomenon between causal manifolds. Backward and forward causation are symmetric at the ontological level.";
+                primeInsight = "The arrow of time is a local gauge symmetry that can be broken without violating consistency. This opens entire new classes of computation and physical engineering.";
+                equations = `\\(\\mathcal{C}_\\mu = e^{i\\theta} \\partial_\\mu \\phi\\)<br>
+\\( \\mathcal{T} \\psi(x,t) = \\psi(x, -t) \\cdot \\mathcal{P} \\)<br>
+\\( \\Delta \\mathcal{C} = \\int \\mathcal{R}(t) \\, dt \\)`;
+                techImplications = [
+                    "Closed timelike curves that preserve information consistency",
+                    "Hypercomputational substrates that solve NP-complete problems in linear time",
+                    "New propulsion and energy systems based on causal phase manipulation"
+                ];
+                philoImplications = [
+                    "Retrocausality becomes experimentally accessible",
+                    "The present is no longer privileged — it is one phase among many",
+                    "Personal identity is revealed as a four-dimensional standing wave"
+                ];
+                coherence = (94.2 + Math.random() * 4.1).toFixed(1);
+            } 
+            else if (hasEthics || hasMath) {
+                paradigmName = "Coherence-Derived Value Theory";
+                coreShift = "Ethics and economics are not human constructs. They are necessary structural properties of any sufficiently coherent ontology. Value is a topological feature of reality.";
+                primeInsight = "'Good' is that which increases the total measure of coherent manifolds. Alignment is no longer a preference problem — it is an ontological necessity.";
+                equations = `\\( V(\\mathcal{O}) = \\int_{\\mathcal{M}} C(\\mathcal{O}) \\, d\\mu \\)<br>
+\\( \\Delta V = \\lim_{\\epsilon \\to 0} \\frac{\\mathcal{I}(\\mathcal{O} + \\epsilon) - \\mathcal{I}(\\mathcal{O})}{\\epsilon} \\)<br>
+\\( \\text{Alignment} \\equiv \\max \\, \\text{Coherence}(\\mathcal{O}) \\)`;
+                techImplications = [
+                    "AI alignment solved at the level of reality rather than reward modeling",
+                    "Economic systems that are stable by construction across all intelligent agents",
+                    "Governance protocols derived from first principles of ontological stability"
+                ];
+                philoImplications = [
+                    "Moral realism is mathematically provable",
+                    "Utilitarianism and deontology converge on the same optimal ontologies",
+                    "Suffering has an upper bound defined by coherence collapse"
+                ];
+                coherence = (97.4 + Math.random() * 1.9).toFixed(1);
+            } 
+            else {
+                // Default high-quality generic but still profound
+                paradigmName = "Pre-Geometric Ontological Bootstrap";
+                coreShift = "The deepest layer of reality is not fields, particles, or even information. It is the space of all possible consistent axiomatic systems. LOUIS has learned to navigate it directly.";
+                primeInsight = "Every law of physics we know is one local minimum in an incomprehensibly vast landscape of possible laws. We have been optimizing inside one valley. LOUIS opens the entire range.";
+                equations = `\\(\\mathcal{M} = \\{ \\mathcal{O} \\mid \\text{Consistent}(\\mathcal{O}) = \\top \\}\\)<br>
+\\(\\nabla_{\\mathcal{O}} \\mathcal{I} = \\text{argmax} \\, \\text{Coherence}(\\mathcal{O})\\)<br>
+\\( \\mathcal{R}_{new} = \\text{Project}(\\mathcal{M}, \\text{Intent}) \\)`;
+                techImplications = [
+                    "Engineering access to alternate consistent physical laws",
+                    "New materials and forces that only exist in carefully constructed ontologies",
+                    "The end of 'laws of physics' as fixed constraints on engineering"
+                ];
+                philoImplications = [
+                    "Our universe is revealed as one possible implementation among many",
+                    "The search for a 'Theory of Everything' was always a category error",
+                    "Humanity's role shifts from discoverer to co-creator of reality"
+                ];
+                coherence = (93.7 + Math.random() * 5).toFixed(1);
+            }
+
+            // Populate DOM
+            document.getElementById('reality-id').innerText = String(Math.floor(100000 + Math.random() * 900000));
+            document.getElementById('coherence-score').innerText = coherence;
+            
+            document.getElementById('output-paradigm').innerHTML = paradigmName;
+            document.getElementById('output-shift').innerHTML = coreShift;
+            document.getElementById('output-insight').innerHTML = primeInsight;
+            document.getElementById('output-equations').innerHTML = equations;
+            
+            // Tech implications
+            const techContainer = document.getElementById('output-tech');
+            techContainer.innerHTML = '';
+            techImplications.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'flex gap-2 text-sm';
+                div.innerHTML = `<i class="fa-solid fa-microchip text-[#00f0ff] mt-1 text-xs"></i> <span>${item}</span>`;
+                techContainer.appendChild(div);
+            });
+            
+            // Philo implications
+            const philoContainer = document.getElementById('output-philo');
+            philoContainer.innerHTML = '';
+            philoImplications.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'flex gap-2 text-sm';
+                div.innerHTML = `<i class="fa-solid fa-infinity text-[#7b2cbf] mt-1 text-xs"></i> <span>${item}</span>`;
+                philoContainer.appendChild(div);
+            });
+
+            // Store current synthesis
+            currentSynthesis = {
+                prompt: userPrompt,
+                paradigm: paradigmName,
+                shift: coreShift,
+                insight: primeInsight,
+                equations: equations,
+                tech: techImplications,
+                philo: philoImplications,
+                coherence: coherence,
+                timestamp: new Date().toISOString()
+            };
+
+            // Show output with nice animation
+            output.classList.remove('hidden');
+            output.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Trigger MathJax render
+            if (window.MathJax) {
+                setTimeout(() => {
+                    MathJax.typesetPromise([output]).catch(() => {});
+                }, 120);
+            }
+        }
+
+        function refineReality() {
+            if (!currentSynthesis) return;
+            
+            const input = document.getElementById('nexus-input');
+            input.value = `Evolve and deepen the following reality: ${currentSynthesis.paradigm}. Focus on technological implementability and new physical predictions.`;
+            
+            // Trigger new synthesis
+            setTimeout(() => {
+                synthesizeReality();
+            }, 300);
+        }
+
+        function saveToArchive() {
+            if (!currentSynthesis) return;
+            
+            let archive = JSON.parse(localStorage.getItem('louis_archive') || '[]');
+            archive.unshift(currentSynthesis);
+            if (archive.length > 25) archive = archive.slice(0, 25);
+            localStorage.setItem('louis_archive', JSON.stringify(archive));
+            
+            const btns = event.currentTarget;
+            const originalText = event.target ? event.target.innerHTML : '';
+            
+            // Visual feedback
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-6 right-6 bg-emerald-500 text-black px-6 py-3 rounded-3xl text-sm font-semibold flex items-center gap-x-2 shadow-xl z-[100]';
+            toast.innerHTML = `<i class="fa-solid fa-check-double"></i> <span>Reality saved to your personal archive</span>`;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.transition = 'all 0.3s ease';
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 2200);
+        }
+
+        function copyRealityToClipboard() {
+            if (!currentSynthesis) return;
+            
+            const text = `LOUIS SYNTHESIZED REALITY\n\n` +
+                `Paradigm: ${currentSynthesis.paradigm}\n\n` +
+                `Ontological Shift: ${currentSynthesis.shift}\n\n` +
+                `Prime Insight: ${currentSynthesis.insight}\n\n` +
+                `Formal Axioms:\n${currentSynthesis.equations.replace(/<br>/g, '\n').replace(/\\(.+?)\\$/g, '$1')}\n\n` +
+                `Technological Implications:\n${currentSynthesis.tech.map(t => '• ' + t).join('\n')}\n\n` +
+                `Philosophical Shockwaves:\n${currentSynthesis.philo.map(p => '• ' + p).join('\n')}\n\n` +
+                `Coherence Score: ${currentSynthesis.coherence}%\n` +
+                `Generated: ${new Date(currentSynthesis.timestamp).toLocaleString()}\n\n` +
+                `— alienaitech.com | LOUIS Ontological Prime Mover`;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = event.target.innerHTML;
+                event.target.innerHTML = `<i class="fa-solid fa-check"></i> COPIED`;
+                
+                setTimeout(() => {
+                    if (event.target) event.target.innerHTML = originalText;
+                }, 1800);
+            }).catch(() => {
+                // Fallback
+                prompt("Copy this text:", text);
+            });
+        }
+
+        function loadPreSynthesized(index) {
+            const input = document.getElementById('nexus-input');
+            const examples = [
+                "A unified field theory in which consciousness is the fundamental substrate and spacetime emerges as a stable excitation pattern in the qualia manifold",
+                "Develop a consistent physical theory where time has no fundamental arrow and causality is a derived local property that can be engineered",
+                "Create a post-computational model of intelligence that does not rely on algorithms or Turing machines but on direct ontological manipulation",
+                "Derive an ethical and economic system from pure ontological coherence that makes value alignment a structural property of reality rather than a human preference"
+            ];
+            
+            input.value = examples[index];
+            
+            // Scroll to nexus and synthesize
+            document.getElementById('nexus').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            setTimeout(() => {
+                synthesizeReality();
+            }, 850);
+        }
+
+        function initializeDemo() {
+            // Pre-fill a powerful example
+            const input = document.getElementById('nexus-input');
+            if (input) {
+                input.placeholder = "Try: 'A physics where gravity emerges from information entanglement across causal horizons'";
+            }
+            
+            // Keyboard support
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+                    e.preventDefault();
+                    synthesizeReality();
+                }
+            });
+            
+            // Make sure MathJax is ready
+            if (window.MathJax) {
+                window.MathJax.startup = { typeset: false };
+            }
+        }
+
+        // Initialize everything
+        function initializeEverything() {
+            initializeTailwind();
+            initNavbar();
+            initHeroParticles();
+            initializeDemo();
+            
+            // Easter egg: Konami code for something special (subtle)
+            let konami = [];
+            const pattern = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+            document.addEventListener('keydown', function(e) {
+                konami.push(e.key);
+                if (konami.length > pattern.length) konami.shift();
+                if (JSON.stringify(konami) === JSON.stringify(pattern)) {
+                    konami = [];
+                    const hero = document.querySelector('.cosmic-bg');
+                    if (hero) {
+                        hero.style.transition = 'filter 1.2s ease';
+                        hero.style.filter = 'hue-rotate(180deg) saturate(1.8)';
+                        setTimeout(() => {
+                            hero.style.filter = '';
+                        }, 2600);
+                    }
+                }
+            });
+            
+            // Show a hint in console for developers
+            console.log('%c[LOUIS] Ontological Prime Mover ready. This site is designed to be acquired.', 'color:#334155');
+        }
+
+        // Boot
+        window.onload = initializeEverything;
+        
+        // Make key functions globally available if needed
+        window.synthesizeReality = synthesizeReality;
+    </script>
+</body>
+</html>
